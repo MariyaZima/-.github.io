@@ -1,13 +1,48 @@
 body{
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+    
+}
+.text{
+  padding-top: 150px;
+  margin-left: 45%;
+  padding-bottom: 20x;
+  color: #ea7f00;
+  font-size: 1.7rem;
+    font-weight: bold;
+}
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 350px;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #ea7f00;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+      -webkit-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 nav{
     width: 100%;
     height: 60px;
     background: #344051;
     position: fixed; 
-}
+    }
 
 .logo{
     color: #fff;
@@ -43,7 +78,7 @@ nav{
     width: 100%;
     height: 1015px;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
-   
+   margin-top: 350px;
 }
 
 .title__container{
@@ -153,10 +188,6 @@ nav{
 }
 
 
-
-
-
-
 .block1 {
     width: 100%;
     height: 717px;
@@ -171,6 +202,7 @@ nav{
      font-weight: bold;
      background: url(../img/line.png) center 100px/70px no-repeat local, url(../img/boy2.png) center 180px/205px no-repeat local;
          }
+
 .block1 p{
     font-size: 17px;
     color: #3f495a;
@@ -180,9 +212,15 @@ nav{
 }
 .pr1{
     padding-top: 30px;
+         }
+.pr p:hover{
+    color: #ea7e00;
+    transform: scale(1.1,1.1)
 }
-
-
+.pr1 p:hover{
+    color: #ea7e00;
+    transform: scale(1.1,1.1)
+}
 .block1 input{
     height: 30px;
     font-size: 20px;
@@ -197,7 +235,16 @@ nav{
     background-position: 15px center;
     background-size: 20px 20px;
     background-repeat: no-repeat;
+    transition: all 0.2s;
+    transform: scale(1);
  }
+.block1 input:active{
+    transform: scale(1.1)
+}
+.block1 input:hover{
+    background: #6f7180;
+    color: white;
+    }
 
 .block2{
     width: 100%;
@@ -216,7 +263,9 @@ nav{
     font-weight: bold;
     font-size: 27px;
     background: url(../img/line.png) center no-repeat local, url(../img/nout.png) no-repeat 290px 260px local, url(../img/sign.png) no-repeat 590px 260px local, url(../img/roket.png) no-repeat 890px 260px local, url(../img/gr.png) no-repeat 1190px 260px local;
-   
+}
+.bl:hover{
+   transform: scale(1.2,1.2)
 }
 
 .bl{
@@ -242,7 +291,7 @@ nav{
 
 .block3{
     width: 100%;
-    height: 950px;
+    height: 900px;
     background: url(../img/foto.png) 10% 150px/1150px 560px no-repeat local, url(../img/line.png) center 55px no-repeat local, url(../img/fon3.jpg) center/cover no-repeat local;
    
 }
@@ -315,34 +364,57 @@ nav{
     line-height: 15px;
 }
 
-.inp{
+.inp input:active{
+    transform: scale(1.2,1.2);
     
-    background: #63b5ae;
-    border-radius: 5px;
-      margin-left: 323px;  
-     margin-top: 50px;
-    border: solid 1px #63b5ae;
-    margin-right: 69%;
-    padding: 10px 15px;
-    
+        
+   }
+.inp input:hover{
+   background-color: #8d9796;
+    color: #101820;
+    border: 2px solid #8d9796;
 }
+
 .inp input{
-  color: #ffffff; 
+     background-color: #63b5ae;
+    border: 2px solid #63b5ae;
+    border-radius: 5px;
+    margin-left: 323px;  
+     margin-top: 50px;
+     margin-right: 69%;
+    padding: 10px 15px;
+    color: #ffffff; 
     background: #63b5ae;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    transform: scale(1);
+   }
+
+.money3D{
+    width: 800px;
+    height: 750px;
+    display: block;
+    outline: 1px solid #efefef;
+    margin: 0px 450px 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 10px 2px 20px 15px #e7e7e7;
+    text-align: center;
+   
 }
 .form{
-    height: 200px;
+    height: 100px;
 }
 .calculation h3{
-    font-size: 20px;
+    font-size: 27px;
     font-weight: bold;
     text-align: center;
     color: #1c2534;
-    text-transform: uppercase;
-        }
+    padding-top: 30px;
+            }
 
 
 h5{
@@ -350,9 +422,10 @@ h5{
     color: #1c2534;
     font-size: 15px;
     margin-top: 60px;
-     margin-left: 450px;
     text-transform: uppercase;
-    
+   text-align: left;
+    padding-left: 92px;
+   
     
 }
 
@@ -360,7 +433,6 @@ select{
     width: 600px;
     height: 50px;
     color: #737373;
-    margin-left: 450px;
     margin-top: 15px;
     border: 2px solid #eeeeee;
     background: #eeeeee;
@@ -369,80 +441,166 @@ select{
 }
 .sel{
     width: 100%;
-    height: 500px;
-    background: url(../img/line%20result.jpg) 49% 80%/600px 2px no-repeat local; 
+    height: 400px;
+    background: url(../img/line%20result.jpg) 49% 397px/600px 2px no-repeat local; 
     }
+.sel select:focus{
+    border: 3px solid #00b6af;
+    box-shadow: 0px 0px 20px #00b6af;
+}
 
 .a{
     width: 100%;
-   height: 200px;
+   height: 350px;
 }
 .fr{
+    height: 38px;
     display: inline-block;
-    margin-left: 400px;
-
- 
- }
-
+  
+    
+    }
+.fr input{
+    margin-top: 20px;
+    background: none;
+    color: #102032;
+    font-weight: bold;
+    
+}
 .fr1{
-   display: inline-block; 
-    margin-left: 400px;
+  
+    height: 38px;
+   display: inline-block;
+    padding-right: 20px;
     
     }
    
+.fr1 input{
+    margin-top: 20px;
+    background: none;
+    color: #102032;
+    font-weight: bold;
+    text-align: right;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin-left: 30px;
+    }
+.fr2{
+    display: inline-block;
+    
+}
+.fr2 input{
+    margin-top: 20px;
+    background: none;
+    color: #102032;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.fr3{
+    display: inline-block;
+}
+.fr3 input{
+    margin-top: 20px;
+    background: none;
+    color: #102032;
+    font-weight: bold;
+    text-align: right;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin-left: 30px;
+    }
+.application input{
+    margin: 15px 50% 0px 45%;
+    padding: 10px 30px;
+    border: 2px solid #00b6af;
+    border-radius: 8px;
+    color: #ffffff;
+    background: #00b6af;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.application input:active{
+    transform: scale(1.1,1.1)
+        }
+.application input:hover{
+    background-color: #8e9897;
+    color: #0b100f;
+    border: 2px solid #8e9897;
+}
+
 .block4{
     width: 100%;
     height: 500px;
-    background: url(../img/line.png) center 160px no-repeat local, url(../img/fon4.jpg) center/cover no-repeat;
-    }
+    background: url(../img/fon4.jpg) center/100% no-repeat;
+    background-attachment: fixed;
+        
+       
+}
 .block4 h3{
     font-size: 27px;
     text-align: center;
     font-weight: bold;
     color: #323e4f;
-    padding-top: 100px;
+    padding-top: 130px;
+    padding-bottom: 50px;
     text-transform: uppercase;
-    
-}
+    background: url(../img/line.png) center 177px no-repeat local; 
+         }
+
 
 .happy{
-    background: url(../img/smail.png) center no-repeat local;
+    background: url(../img/smail.png) center 35px no-repeat local;
     float: left;
-    width: 280px;
+    width: 220px;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
     line-height: 40px;
-    margin-left: 170px;
+    margin-left: 300px;
     color: #323e4f;
+    transition: all 0.2s;
+    transform: scale(1)
     
  }
+.happy:hover{
+    transform: scale(1.4,1.4);
+}
+
 .happy h4{
     font-weight: bold;
     font-size: 25px;
     }
 
 .happy1{
-    background: url(../img/staples.png) center no-repeat local;
+    background: url(../img/staples.png) center 35px no-repeat local;
     float: left;
-    width: 300px;
+    width: 250px;
     text-align: center;
-    padding-top: 200px;
-     line-height: 40px;
+    padding-top: 100px;
+    line-height: 40px;
     color: #323e4f;
+    transition: all 0.2s;
+    transform: scale(1)
     
 } 
+.happy1:hover{
+    transform: scale(1.4,1.4);
+}
 .happy1 h4{
     font-weight: bold;
     font-size: 25px;
     }
 .happy2{
-    background: url(../img/check.png) center no-repeat local;
+    background: url(../img/check.png) center 35px no-repeat local;
     float: left;
-    width: 300px;
+    width: 230px;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
      line-height: 40px;
     color: #323e4f;
+    transition: all 0.2s;
+    transform: scale(1)
+}
+.happy2:hover{
+    transform: scale(1.4,1.4);
 }
 .happy2 h4{
     font-weight: bold;
@@ -450,16 +608,19 @@ select{
     }
 
 .happy3{
-    background: url(../img/cup.png) center no-repeat local;
+    background: url(../img/cup.png) center 35px no-repeat local;
    float: left;
-    width: 300px;
+    width: 250px;
     text-align: center; 
-    padding-top: 200px;
+    padding-top: 100px;
      line-height: 40px;
     color: #323e4f;
-    
+    transition: all 0.2s;
+    transform: scale(1)
 }
-
+.happy3:hover{
+    transform: scale(1.4,1.4);
+}
 .happy3 h4{
     font-weight: bold;
     font-size: 25px;
@@ -546,7 +707,13 @@ select{
      line-height: 20px;
     color: #ffff;
     margin-left: 400px;
+    transition: all 0.2s;
+    transform: scale(1);
 }
+.SPB:hover{
+   transform: scale(1.4,1.4);
+}
+
 
 .info{
    background: url(../img/envelope.png) center no-repeat local;
@@ -555,7 +722,13 @@ select{
     text-align: center;
     padding-top: 130px;
        color: #ffff;
+    transition: all 0.2s;
+    transform: scale(1);
 }
+.info:hover{
+   transform: scale(1.4,1.4);
+}
+
 .tel{
    background: url(../img/pipe.png) center no-repeat local;
     float: left;
@@ -563,7 +736,12 @@ select{
     text-align: center;
     padding-top: 130px;
         color: #ffff;
-} 
+       transition: all 0.2s;
+    transform: scale(1);
+}
+.tel:hover{
+   transform: scale(1.4,1.4);
+}
 
 .block6 h6{
     font-size: 20px;
@@ -582,9 +760,18 @@ form input{
     margin-left: 40px;
     margin-top: 45px;
     background-color: #d5d8de;
+   }
 
-    
+.input1 input:focus{
+    border: 3px solid #ffff;
+    box-shadow: 0px 0px 20px #ffff;
 }
+.input2 input:focus{
+    border: 3px solid #ffff;
+    box-shadow: 0px 0px 20px #ffff;
+}
+    
+
     .input1{
         margin-left: 370px;
     }
@@ -596,6 +783,10 @@ textarea{
     color: #5d5d5e;
     background-color: #d5d8de;
     
+}
+textarea:focus{
+    border: 3px solid #ffff;
+    box-shadow: 0px 0px 20px #ffff;
 }
 .letter input{
     height: 45px;
@@ -609,6 +800,16 @@ textarea{
     font-weight: bold;
     margin-left: 670px;
     margin-top: 20px;
+    transition: all 0.2s;
+    transform: scale(1)
+}
+.letter input:active{
+    transform: scale(1.2,1.2)
+}
+.letter input:hover{
+    background-color: white;
+    color: #001225;
+    
 }
 .map input{
     width: 130px;
@@ -621,6 +822,11 @@ textarea{
     font-weight: bold;
     margin-left: 43%;
    margin-top: 270px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+.map input:hover{
+   transform: scale(1.4,1.4);
 }
 
 .end{
