@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
-
+<script src="js/myScript.js"></script>
   <header>
       <nav>
         <div class="container">
@@ -119,55 +119,56 @@
        
          <div class="row justify-content-center my-5">
          <div class="col-10 col-md-2"><h4 class="fw-bold">CLIENT:</h4> <p>Какая-то компания</p>
-         <h4 class="fw-bold">WEBSITE:</h4> <p>http://www.somedomian.com</p></div>
+         <h4 class="fw-bold">WEBSITE:</h4> <p>http://www.somedomian.com</p>
+         <button type="button" class="btn btn-info">Перейти на сайт</button></div>
          <div class="col-10 col-md-7"><h4 class="fw-bold">Название проекта</h4> <p>Lorem ipsum dolor sit amet. ipsum dolor sit amet. ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quisquam, officia impedit illo vel dolor! ipsum dolor sit amet, consectetur adipisicing elit. Quas, nulla. ipsum dolor sit amet, consectetur adipisicing elit. Recusandae fuga harum dolore obcaecati suscipit quo cumque, illum veniam corporis optio!</p> </div></div>
        
-       <div class="row col-8 col-md-2 mx-5">
-        <button type="button" class="btn btn-info mx-5">Перейти на сайт</button></div>
+       
       
-          
-    <div class="d-flex col-10 col-md-8 flex-column" style="height: 600px; border: 2px solid #00b6af; justify-content: center">
-       <div class=" flex-column">
-        <h3 class="text-center fw-bold">Расчет стоимости</h3>
-    <h5>ТИП САЙТА</h5>
-    <select class="form-select" aria-label="Default select example">
+     <div class="block4_1">     
+    <div class="row justify-content-center"><div class="col-10 col-md-6 my-5 py-5" style="height: 700px; border: 2px solid #dfdfe4; box-shadow: 0px 0px 20px #dfdfe4;">
+    <h2 class="text-center fw-bold my-5">Расчет стоимости</h2>
+    <form action="#">
+    <h5 class="fw-bold py-2">ТИП САЙТА</h5>
+    <select class="form-select lh-lg my-3" aria-label="Default select example">
     <option selected>Выберите пункт...</option>
     <option value="1">Option1</option>
     <option value="2">Option2</option>
     <option value="3">Option3</option></select>
 
-    <h5>ДИЗАЙН</h5>
-    <select class="form-select" aria-label="Default select example">
+    <h5 class="fw-bold py-2">ДИЗАЙН</h5>
+    <select class="form-select lh-lg my-3" aria-label="Default select example">
     <option selected>Выберите пункт...</option>
     <option value="1">Option1</option>
     <option value="2">Option2</option>
     <option value="3">Option3</option></select>
 
 
-    <h5>АДАПТИВНОСТЬ</h5>
-    <select class="form-select" aria-label="Default select example">
+    <h5 class="fw-bold py-2">АДАПТИВНОСТЬ</h5>
+    <select class="form-select lh-lg my-3" aria-label="Default select example">
     <option selected>Выберите пункт...</option>
     <option value="1">Option1</option>
     <option value="2">Option2</option>
     <option value="3">Option3</option></select>
-    <img src="../src/img/line%20result.jpg" alt=""></div>
+    <div class="row justify-content-center my-5"><img src="../src/img/line%20result.jpg" alt=""></div>
         
       
-      <form action="#">
-      <div class="d-inline-flex">
-      <div class="flex-grow-1"><input type="text" name="text_input" value="Сроки"></div>
-      <div class="col"><input type="text" name="text_input" value="0"></div></div>
-      <div class="d-inline-flex">
-      <div class="flex-grow-1"><input type="text" name="text_input" value="Стоимость"></div>
-      <div class="col"><input type="text" name="text_input" value="0"></div></div></form>
       
-      <div class="row col-8 col-md-2">
-        <button type="button" class="btn btn-info">Оставить заявку</button></div>
+      
+      <div class="flex-grow-1"><input type="text" name="text_input" value="Сроки">
+      <input type="text" name="text_input" value="0"></div>
+      
+      <div class="flex-grow-1"><input type="text" name="text_input" value="Стоимость">
+      <input type="text" name="text_input" value="0"></div>
+      </form>
+      
+      <div class="row justify-content-center"><div class="row col-8 col-md-3 my-5">
+        <button type="button" class="btn btn-info">Оставить заявку</button></div></div>
         
   </div>
 
 
-     </div>
+     </div></div> </div>
         
         
   <div class="block5">
@@ -204,7 +205,7 @@
   
   <footer>
   <div class="block7">
-  <div class="row justify-content-center gy-5"><div class="p-4 col-12 text-center fs-2 fw-bold text-uppercase text-white">МОИ КОНТАКТЫ</div> 
+  <div class="row justify-content-center gy-5 pt-5"><div class="p-4 col-12 text-center fs-2 fw-bold text-uppercase text-white">МОИ КОНТАКТЫ</div> 
    <div class="row justify-content-center"><div class="col-12 text-center"><img src="../src/img/line.png" alt="Линия..."></div></div>
   <p class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe quibusdam odio dolor pariatur recusandae.</p> </div> 
   
@@ -216,22 +217,21 @@
  
  <div class="col-10 col-md-2 fs-6 text-center"><div class="text-center my-5"><img src="../src/img/pipe.png" alt=""></div><h5 class="text-white">+7999 999-99-99</h5></div></div>
  
-        <div class="row justify-content-center my-4"><div class="col-12 text-center fs-5 fw-bold text-uppercase text-white">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div>
+        <div class="row justify-content-center my-4"><div class="col-12 text-center fs-5 fw-bold text-uppercase text-white">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div></div>
 <form>
-<div class="d-flex col-10 col-md-4 text-center my-5 flex-column">
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Имя">
+<div class="row flex-wrap justify-content-center my-5"><div class="col-5 col-md-3">
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Имя"></div>
+  <div class="col-5 col-md-3"><input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email"></div>
   </div>
-<div class="d-flex col-10 col-md-4 text-center my-5 flex-column">
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-</div>
-<div class="d-flex flex-column col-10 col-md-8 text-center">
-  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Сообщение" rows="3"></textarea>
+  
+<div class="row justify-content-center"><div class="col-10 col-md-6">
+  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Сообщение" rows="3"></textarea></div>
 </div>
  </form>
- <div class="col-10 col-md-2 flex-column">
-  <button type="button" class="btn btn-outline-light">Отправить</button></div>  
+ <div class="row justify-content-center my-4"><div class="col-12 col-md-1">
+  <button type="button" class="btn btn-outline-light fs-5">Отправить</button></div></div>
             
-      </div></div>
+      </div>
        
      
   <div class="block8">

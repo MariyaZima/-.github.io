@@ -227,7 +227,7 @@ nav{
     }
 }
 
-.block{
+.block1{
     width: 100%;
     height: 800px;
     background: url(../img/fon2.jpg) center/cover no-repeat local;
@@ -284,13 +284,17 @@ button:active{
 }}
 .block4{
     width: 100%;
-    height: 2000px;
+    height: 1600px;
     background: url(../img/Layer%200.jpg) center/cover no-repeat local;
 }
 
 .btn-info{
 color: white;
 }
+.form-select{
+    background: #eeeeee;
+}
+
 
 .block5{
     width: 100%;
@@ -311,7 +315,7 @@ color: white;
 
 .block7{
     width: 100%;
-    height: 850px;
+    height: 930px;
     background: url(../img/fon6.jpg) center/cover no-repeat local;
 }
 
@@ -321,7 +325,6 @@ color: white;
     height: 280px;
     background: url(../img/map.jpg) center/cover no-repeat local;
 }
-
 
 
 
