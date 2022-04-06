@@ -64,7 +64,7 @@ if (design == 4) {sum += 4000;}
 if (adaptive == "Да" || "да") {sum += 15000;}
 if (adaptive == "Нет" || "нет") {sum += 5000;}
 	alert ("Стоимость Вашего сайта" + " - " + sum + " рублей");
-	console.log(sum);
+	console.log("Сумма" + " - " + sum);
 	
 	let time = 0;
 if (type == 1) {time += 2;}
@@ -77,7 +77,7 @@ if (design == 4) {time += 3;}
 if (adaptive == "Да" || "да") {time += 2;}
 if (adaptive == "Нет" || "нет") {time += 1;}
 	alert ("Срок исполнения вашего заказа" + " - " + time + " дней");
-	console.log(time);
+	console.log("Срок" + " - " + time);
 }
 
 	
