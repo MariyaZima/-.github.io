@@ -4,7 +4,7 @@ let question = confirm("Рассчитаем стоимость и сроки?",
 if (question === true)
    {alert ("Тогда начнем!!!");
 	
-let type = prompt("Какой тип сайта Вас интересует? (указать номер)", "1 - Сайт-визитка 2 - Интернет-магазин 3 - Корпоративный сайт");
+let type = +prompt("Какой тип сайта Вас интересует? (указать номер)", "1 - Сайт-визитка 2 - Интернет-магазин 3 - Корпоративный сайт");
 if (type <= 3)
    {alert ("Вы выбрали " + ": " + type);}
 	else {
@@ -20,7 +20,7 @@ if (type <= 3)
 	console.log(type + " = " + "10000");}
 	console.log(type);
 		
-let design = prompt("Какой стиль дизайна Вас интересует?", "1 - Классический 2 - Минимализм 3 - Рисованный 4 - Ретро");		
+let design = +prompt("Какой стиль дизайна Вас интересует?", "1 - Классический 2 - Минимализм 3 - Рисованный 4 - Ретро");		
 if (design <= 4){		
 alert("Вы выбрали " + ": " + design);}		
 	else {	
@@ -45,22 +45,45 @@ if (adaptive === "Да" || "Нет"){
 alert("Вы выбрали " + ": " + adaptive);}		
 else {		
 alert ("Вы ничего не выбрали!");}		
-	if (adaptive == "Да"){	
+	if (adaptive === "Да" || adaptive === "да"){	
 		alert ("Стоимость - 15 000руб");
 	console.log(adaptive + " = " + "15000");}
-	if (adaptive == "Нет"){	
+	if (adaptive === "Нет" || adaptive === "нет"){	
 		alert ("Стоимость - 5 000руб");
 	console.log(adaptive + " = " + "5000");}
-	console.log(adaptive);}	
+	console.log(adaptive);	
+    
+let sum = 0;
+if (type == 1) {sum += 5000;}
+if (type == 2) {sum += 20000;}
+if (type == 3) {sum += 10000;}
+if (design == 1) {sum += 1000;}
+if (design == 2) {sum += 2000;}
+if (design == 3) {sum += 3000;}
+if (design == 4) {sum += 4000;}
+if (adaptive == "Да" || "да") {sum += 15000;}
+if (adaptive == "Нет" || "нет") {sum += 5000;}
+	alert ("Стоимость Вашего сайта" + " - " + sum + " рублей");
+	console.log(sum);
+	
+	let time = 0;
+if (type == 1) {time += 2;}
+if (type == 2) {time += 10;}
+if (type == 3) {time += 7;}
+if (design == 1) {time += 1;}
+if (design == 2) {time += 1;}
+if (design == 3) {time += 3;}
+if (design == 4) {time += 3;}
+if (adaptive == "Да" || "да") {time += 2;}
+if (adaptive == "Нет" || "нет") {time += 1;}
+	alert ("Срок исполнения вашего заказа" + " - " + time + " дней");
+	console.log(time);
+}
 
-	else {
+	
+else {
     alert ("Вы нажали отмена");
 	}console.log(question);
-
-
-
-
-
 
 
 
