@@ -10,6 +10,7 @@
     <title>Андрей Браун - вэб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -23,12 +24,12 @@
                 <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Андрей Браун</div></div>
                 <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block"> <div class="menu">
              <ul>
-              <li><a href="#">Обо мне</a></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Кейсы</a></li>
-              <li><a href="#">Прайс</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#about">Обо мне</a></li>
+              <li><a href="#what">Услуги</a></li>
+              <li><a href="#cases">Кейсы</a></li>
+              <li><a href="#price">Прайс</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#contacts">Контакты</a></li>
           </ul></div>   
                </div>
   <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
@@ -38,12 +39,12 @@
   </a>
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Обо мне</a></li>
-              <li><a class="dropdown-item" href="#">Услуги</a></li>
-              <li><a class="dropdown-item" href="#">Кейсы</a></li>
-              <li><a class="dropdown-item" href="#">Прайс</a></li>
-              <li><a class="dropdown-item" href="#">Отзывы</a></li>
-              <li><a class="dropdown-item" href="#">Контакты</a></li>
+              <li><a class="dropdown-item" href="#about">Обо мне</a></li>
+              <li><a class="dropdown-item" href="#what">Услуги</a></li>
+              <li><a class="dropdown-item" href="#cases">Кейсы</a></li>
+              <li><a class="dropdown-item" href="#price">Прайс</a></li>
+              <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+              <li><a class="dropdown-item" href="#contacts">Контакты</a></li>
   </ul>
 </div>
             </div>
@@ -64,14 +65,34 @@
     <h1>Привет <br> Я Андрей Браун</h1>
     <h4>Фулл стек вэб - разработчик</h4>
     <input type="button" value="Обо мне">
-    <input type="button" value="Мои работы">
+   <input type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" value="Мои работы">
+  
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">СДЕЛАЙТЕ ЗАКАЗ СЕГОДНЯ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       И ПОЛУЧИТЕ СКИДКУ - 50%!!!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сделать заказ</button>
+      </div>
+    </div>
+  </div>
+</div>
 </div>    
     </div></div></div>
    </section>
 </main>
 
 
- <div class="block1">
+ <div class="block1" id="about">
     <div class="row justify-content-center gy-5"><div class="p-4 col-12 text-center fs-2 fw-bold text-uppercase color: #1a2e43 text-#1a2e43">Обо мне</div>
     </div>
     
@@ -92,7 +113,7 @@
 </div>
      </div>
      
-  <div class="block2">
+  <div class="block2" id="what">
           <div class="row justify-content-center"><div class="p-5 col-12 text-center fs-2 fw-bold text-uppercase color: #1a2e43 text-#1a2e432">Что я умею</div></div>
           <div class="row justify-content-center"><div class="col-12 text-center"><img src="../src/img/line.png" alt="Линия..."></div></div>
           
@@ -106,17 +127,20 @@
  <div class="col-10 col-md-2 color: #38475a fs-6 text-center p-5"><div class="text-center my-5"><img src="../src/img/gr.png" alt=""></div><h5>Маркетинг</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora aspernatur, eius.</p></div></div>
     </div>
     
-    <div class="block3">
+    <div class="block3" id="cases">
      <div class="row justify-content-center"><div class="p-5 col-12 text-center fs-2 fw-bold text-uppercase color: #1a2e43 text-#1a2e432">Кейсы</div></div>  
       <div class="row justify-content-center"><div class="col-12 text-center"><img src="../src/img/line.png" alt="Линия..."></div></div>  
       <div class="row justify-content-center mt-5"><div class="col-7 color: #38475a fs-6">
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vero aut minus vel debitis molestias ea ad, quaerat optio consequatur!</p>
 </div></div>
     </div>
+   
     
    <div class="block4">
-      <div class="col-12 col-md-12 text-center"><img src="../src/img/foto(s).png" class="img-fluid" alt=""></div>
-       
+      <div class="col-12 col-md-12 text-center"><img src="../src/img/foto(s).png" href="../src/img/foto(s).png" class="image-link" alt=""></div>
+       </div>
+ 
+
          <div class="row justify-content-center my-5">
          <div class="col-10 col-md-2"><h4 class="fw-bold">CLIENT:</h4> <p>Какая-то компания</p>
          <h4 class="fw-bold">WEBSITE:</h4> <p>http://www.somedomian.com</p>
@@ -125,7 +149,7 @@
        
        
       
-     <div class="block4_1">     
+     <div class="block4_1" id="price">     
     <div class="row justify-content-center"><div class="col-10 col-md-6 my-5 py-5" style="height: 700px; border: 2px solid #dfdfe4; box-shadow: 0px 0px 20px #dfdfe4;">
     <h2 class="text-center fw-bold my-5">Расчет стоимости</h2>
     <form action="#">
@@ -168,7 +192,7 @@
   </div>
 
 
-     </div></div> </div>
+     </div></div>
         
         
   <div class="block5">
@@ -176,35 +200,63 @@
            
        <div class="row text-center justify-content-center lh-lg my-5">
       <div class="col-10 col-md-2 my-3">
-      <img src="../src/img/smail.png" alt=""><h4 class="fw-bold my-3">120</h4><p>СЧАСТЛИВЫХ КЛИЕНТОВ</p></div>
+      <img src="../src/img/smail.png" alt=""><h4 class="element-animation_1 fw-bold my-3" id="out">0</h4><p>СЧАСТЛИВЫХ КЛИЕНТОВ</p></div>
      <div class="col-10 col-md-2 my-3">
-      <img src="../src/img/staples.png" alt=""><h4 class="fw-bold my-3">4,600</h4><p>ЧАСОВ РАБОТЫ</p></div>
+      <img src="../src/img/staples.png" alt=""><h4 class="element-animation_2 fw-bold my-3" id="out">0</h4><p>ЧАСОВ РАБОТЫ</p></div>
      <div class="col-10 col-md-2 my-3">
-      <img src="../src/img/check.png" alt=""><h4 class="fw-bold my-3">340</h4><p>ПРОЕКТОВ ЗАВЕРШЕНО</p></div>
+      <img src="../src/img/check.png" alt=""><h4 class="element-animation_3 fw-bold my-3" id="out">0</h4><p>ПРОЕКТОВ ЗАВЕРШЕНО</p></div>
        <div class="col-10 col-md-2 my-3">
-      <img src="../src/img/cup.png" alt=""><h4 class="fw-bold my-3">23</h4><p>НАГРАД ПОЛУЧЕНО</p></div> </div> 
+      <img src="../src/img/cup.png" alt=""><h4 class="element-animation_4 fw-bold my-3" id="out">0</h4><p>НАГРАД ПОЛУЧЕНО</p></div> </div> 
       
   </div>      
         
-      <div class="block6">
-          <div class="row justify-content-center gy-5"><div class="p-4 col-12 text-center fs-2 fw-bold text-uppercase color: #1a2e43 text-#1a2e43">ОТЗЫВЫ</div>
+      <div class="block6" id="reviews">
+          <div class="p-4 col-12 text-center fs-2 fw-bold text-uppercase color: #1a2e43 text-#1a2e43 my-5">ОТЗЫВЫ</div>
            <div class="row justify-content-center"><div class="col-12 text-center"><img src="../src/img/line.png" alt="Линия..."></div></div>
-     <div class="row justify-content-center gy-5"><div class="col-12 text-center"><img src="../src/img/foto5.png" alt="Фото..."></div></div> 
-    </div>
-      <div class="col-12 text-center my-5"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptates, consequatur quia fuga culpa reprehenderit laudantium, <br>natus quam quibusdam exercitationem quidem, dolorum, non possimus sed. <div class="py-3"><span class="fw-bold">Михаил</span>, Ген директор ПАО "Газпром"</div></div>
+     
     
-   <div class="d-flex justify-content-center"> <div class="form-check">
-   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault"></div>
-  <div class="form-check">
-  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault"></div>
-  <div class="form-check">
-   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault"></div>
+   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="../src/img/fon5(a).jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Метка первого слайда</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quod, voluptates quam sit non pariatur, at earum repellendus cupiditate inventore id minima doloribus unde illum, sequi delectus sint necessitatibus quibusdam ab porro natus. Est omnis non, libero perspiciatis voluptas at molestiae iure doloribus harum, saepe, quos deleniti vel recusandae adipisci magni earum dolorum quam nemo, eos nesciunt! Culpa natus vero consequatur non atque suscipit, quidem officiis voluptatibus laudantium eos quaerat temporibus aspernatur cumque maiores magnam. Rem reprehenderit quod quaerat perspiciatis consequatur fugit enim, placeat neque maxime corporis, reiciendis ratione quis minima eligendi quisquam quidem officia, est quia nihil inventore! Rerum dolore quam omnis reprehenderit, iusto? Libero velit iste voluptas, distinctio deserunt cum, officia eos magni, dolor architecto necessitatibus doloremque quis.</p>
+      </div>
     </div>
-      
-        </div>  
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../src/img/fon5(a).jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Метка второго слайда</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium deserunt voluptates assumenda, in recusandae ipsum cupiditate ipsam dolorum ea amet accusantium magnam odio, saepe fugiat incidunt veniam error. Quam praesentium dicta, nostrum corporis modi iusto, blanditiis eaque atque dolores repudiandae distinctio ut dolor, esse minima vel ea quas molestias est veniam quis nulla? Beatae porro expedita ullam voluptatem nobis ad! Mollitia corrupti labore assumenda sit blanditiis iure nihil. Tempora, adipisci suscipit fugiat ipsam eos quas veritatis. Architecto quam unde, saepe neque voluptate iure quo deleniti! Numquam ex harum corporis minus porro temporibus quos, optio, sed fuga officia culpa quidem neque quis id ducimus. Ut id, sunt nulla dicta, expedita, aspernatur officiis corporis sint, eveniet nemo deserunt quo ullam dolor numquam.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../src/img/fon5(a).jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Метка третьего слайда</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, praesentium. Aliquid optio excepturi hic, iusto quidem possimus sed enim nulla omnis, maxime fugiat a neque saepe. Officia vero hic atque, quisquam reprehenderit nostrum architecto eius ullam maxime fugiat a minus, tenetur vel dolor ut sequi saepe pariatur culpa consequuntur quidem sint, aliquid asperiores obcaecati doloremque. Velit eum dignissimos, soluta quidem at reiciendis quisquam ipsum eligendi consequuntur accusamus saepe enim molestiae, cupiditate. Tenetur praesentium ea a debitis inventore sequi veritatis animi ullam ipsam. Quos, tenetur soluta nam placeat labore obcaecati fugit similique ducimus commodi nisi ut, optio consequatur dolorem. Accusantium tenetur quo exercitationem expedita consequuntur, dolorem fugiat accusamus similique, laudantium obcaecati impedit earum. Nostrum soluta eligendi animi non iste, earum sequi?/p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+        </div>   
   
   <footer>
-  <div class="block7">
+  <div class="block7" id="contacts">
   <div class="row justify-content-center gy-5 pt-5"><div class="p-4 col-12 text-center fs-2 fw-bold text-uppercase text-white">МОИ КОНТАКТЫ</div> 
    <div class="row justify-content-center"><div class="col-12 text-center"><img src="../src/img/line.png" alt="Линия..."></div></div>
   <p class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe quibusdam odio dolor pariatur recusandae.</p> </div> 
@@ -246,6 +298,7 @@
                                                
    <script src="js/jquery-3.6.0.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>
    <script src="js/myScript.js"></script>                                             
    
    </body>

@@ -79,20 +79,71 @@ if (adaptive == "Нет" || "нет") {time += 1;}
 	alert ("Срок исполнения вашего заказа" + " - " + time + " дней");
 	console.log("Срок" + " - " + time);
 }
-
-	
 else {
     alert ("Вы нажали отмена");
 	}console.log(question);
 
 
+$('.container a').on('click', function() {
+    let href = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(href).offset().top - 50 + "px"}, {
+           });});
+	
+					
+
+$(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
 
 
+$(function () { 
+    var target_block = $(".element-animation"); 
+    var blockStatus = true;  
+    $(window).scroll(function() { 
+        var scrollEvent = ($(window).scrollTop() > ($(target_block).offset().top - $(window).height())); 
+            if(scrollEvent && blockStatus) {  
+            blockStatus = false;  
+			
+$(function() {
+		var numb_start = $(".element-animation_1").text();
+		$({numberValue: numb_start}).animate({numberValue: 120}, {
+		duration: 1000, 
+		easing: "linear",
+		step: function(val) {
+			$(".element-animation_1").html(Math.ceil(val));
+			} }); });		
+$(function() {
+		var numb_start = $(".element-animation_2").text();
+		$({numberValue: numb_start}).animate({numberValue: 4600}, {
+		duration: 1000, 
+		easing: "linear",
+		step: function(val) {
+			$(".element-animation_2").html(Math.ceil(val));
+			} }); });
+$(function() {
+		var numb_start = $(".element-animation_3").text();
+		$({numberValue: numb_start}).animate({numberValue: 340}, {
+		duration: 1000, 
+		easing: "linear",
+		step: function(val) {
+			$(".element-animation_3").html(Math.ceil(val));
+			} }); });
+$(function() {
+		var numb_start = $(".element-animation_4").text();
+		$({numberValue: numb_start}).animate({numberValue: 23}, {
+		duration: 1000, 
+		easing: "linear",
+		step: function(val) {
+			$(".element-animation_4").html(Math.ceil(val));
+			} }); });
 
-
-
-
-
-
-
-
+		 } }); });
+			 
+					 
+					 
+					 
+					 
+					 
+					 
+				
