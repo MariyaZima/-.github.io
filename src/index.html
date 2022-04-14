@@ -7,7 +7,7 @@
     <meta name="robots" content="all">
     <meta property="og:title" content="описание">
     <meta name="veiwport" content="width=device-width, initial-scale-1.0">   
-    <title>Андрей Браун - вэб-разработчик</title>
+    <title>Мария Зима - вэб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -17,11 +17,12 @@
 </head>
 <body>
 
+
   <header>
       <nav>
         <div class="container">
             <div class="row">
-                <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Андрей Браун</div></div>
+                <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Мария Зима</div></div>
                 <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block"> <div class="menu">
              <ul>
               <li><a href="#about">Обо мне</a></li>
@@ -62,11 +63,17 @@
   <div class="container h-100"><div class="row align-items-center h-100">
       <div class="col-lg-6 mt-5 pt-5">
       <div class="title__container mt-5">
-    <h1>Привет <br> Я Андрей Браун</h1>
+    <h1>Привет <br> Я Мария Зима</h1>
     <h4>Фулл стек вэб - разработчик</h4>
     <input type="button" value="Обо мне">
    <input type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" value="Мои работы">
   
+
+
+</div>    
+    </div></div></div>
+   </section>
+</main>
 
 
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -80,18 +87,12 @@
        И ПОЛУЧИТЕ СКИДКУ - 50%!!!
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-        <button type="button" class="btn btn-primary">Сделать заказ</button>
+        <a href="#close"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button></a>
+        <a href="#app"><button type="button" class="btn btn-primary">Сделать заказ</button></a>
       </div>
     </div>
   </div>
 </div>
-</div>    
-    </div></div></div>
-   </section>
-</main>
-
-
  <div class="block1" id="about">
     <div class="row justify-content-center gy-5"><div class="p-4 col-12 text-center fs-2 fw-bold text-uppercase color: #1a2e43 text-#1a2e43">Обо мне</div>
     </div>
@@ -114,7 +115,7 @@
      </div>
      
   <div class="block2" id="what">
-          <div class="row justify-content-center"><div class="p-5 col-12 text-center fs-2 fw-bold text-uppercase color: #1a2e43 text-#1a2e432">Что я умею</div></div>
+          <div class="row justify-content-center" id="close"><div class="p-5 col-12 text-center fs-2 fw-bold text-uppercase color: #1a2e43 text-#1a2e432">Что я умею</div></div>
           <div class="row justify-content-center"><div class="col-12 text-center"><img src="../src/img/line.png" alt="Линия..."></div></div>
           
           <div class="row justify-content-center my-5">
@@ -149,44 +150,45 @@
        
        
       
-     <div class="block4_1" id="price">     
+     <div class="block4_1" id="price,">     
     <div class="row justify-content-center"><div class="col-10 col-md-6 my-5 py-5" style="height: 700px; border: 2px solid #dfdfe4; box-shadow: 0px 0px 20px #dfdfe4;">
-    <h2 class="text-center fw-bold my-5">Расчет стоимости</h2>
+    <h2 class="text-center fw-bold my-5" id="app">Расчет стоимости</h2>
     <form action="#">
     <h5 class="fw-bold py-2">ТИП САЙТА</h5>
-    <select class="form-select lh-lg my-3" aria-label="Default select example">
+    <select class="form-select form-select-lg mb-3" aria-label="Default select example">
     <option selected>Выберите пункт...</option>
-    <option value="1">Option1</option>
-    <option value="2">Option2</option>
-    <option value="3">Option3</option></select>
+    <option value="1">Сайт-визитка</option>
+    <option value="2">Интернет-магазин</option>
+    <option value="3">Корпоративный сайт</option>
+    </select>
 
     <h5 class="fw-bold py-2">ДИЗАЙН</h5>
-    <select class="form-select lh-lg my-3" aria-label="Default select example">
+    <select class="form-select form-select-lg mb-3" aria-label="Default select example">
     <option selected>Выберите пункт...</option>
-    <option value="1">Option1</option>
-    <option value="2">Option2</option>
-    <option value="3">Option3</option></select>
-
+    <option value="1">Классический</option>
+    <option value="2">Минимализм</option>
+    <option value="3">Рисованный</option>
+    <option value="4">Ретро</option>
+    </select>
 
     <h5 class="fw-bold py-2">АДАПТИВНОСТЬ</h5>
-    <select class="form-select lh-lg my-3" aria-label="Default select example">
+    <select class="form-select form-select-lg mb-3" aria-label="Default select example">
     <option selected>Выберите пункт...</option>
-    <option value="1">Option1</option>
-    <option value="2">Option2</option>
-    <option value="3">Option3</option></select>
-    <div class="row justify-content-center my-5"><img src="../src/img/line%20result.jpg" alt=""></div>
+    <option value="1">Да</option>
+    <option value="2">Нет</option>
+    </select>
+    <div class="row justify-content-center my-4"><img src="../src/img/line%20result.jpg" alt=""></div>
         
+           
+   <div class="row"><div class="col-8"><input class="form-control" type="text" placeholder="Стоимость заказа" aria-label="readonly input example" readonly></div>
+   <div class="col-4"><input class="form-control text-end" type="text" placeholder="0" aria-label="readonly input example" readonly></div></div>
+   
+   <div class="row my-4"><div class="col-8"><input class="form-control" type="text" placeholder="Сроки исполнения" aria-label="readonly input example" readonly></div>
+   <div class="col-4"><input class="form-control text-end" type="text" placeholder="0" aria-label="readonly input example" readonly></div></div>
+     
+       </form>
       
-      
-      
-      <div class="flex-grow-1"><input type="text" name="text_input" value="Сроки">
-      <input type="text" name="text_input" value="0"></div>
-      
-      <div class="flex-grow-1"><input type="text" name="text_input" value="Стоимость">
-      <input type="text" name="text_input" value="0"></div>
-      </form>
-      
-      <div class="row justify-content-center"><div class="row col-8 col-md-3 my-5">
+      <div class="row justify-content-center"><div class="row col-8 col-md-3 my-4">
         <button type="button" class="btn btn-info">Оставить заявку</button></div></div>
         
   </div>
@@ -196,17 +198,17 @@
         
         
   <div class="block5">
-     <div class="row justify-content-center py-5"><div class="my-5 col-12 text-center fs-2 fw-bold text-uppercase color: #1a2e43 text-#1a2e432">НЕМНОГО СТАТИСТИКИ</div><div class="col-12 text-center"><img src="../src/img/line.png" alt="Линия..."></div></div>  
+     <div class="row justify-content-center py-5"><div class="my-5 col-12 text-center fs-2 fw-bold text-uppercase color: #1a2e43 text-#eeee">НЕМНОГО СТАТИСТИКИ</div><div class="col-12 text-center"><img src="../src/img/line.png" alt="Линия..."></div></div>  
            
        <div class="row text-center justify-content-center lh-lg my-5">
       <div class="col-10 col-md-2 my-3">
-      <img src="../src/img/smail.png" alt=""><h4 class="element-animation_1 fw-bold my-3" id="out">0</h4><p>СЧАСТЛИВЫХ КЛИЕНТОВ</p></div>
+      <img src="../src/img/smail.png" alt=""><h4 class="element-animation fw-bold my-3" id="out">120</h4><p>СЧАСТЛИВЫХ КЛИЕНТОВ</p></div>
      <div class="col-10 col-md-2 my-3">
-      <img src="../src/img/staples.png" alt=""><h4 class="element-animation_2 fw-bold my-3" id="out">0</h4><p>ЧАСОВ РАБОТЫ</p></div>
+      <img src="../src/img/staples.png" alt=""><h4 class="element-animation fw-bold my-3" id="out">4600</h4><p>ЧАСОВ РАБОТЫ</p></div>
      <div class="col-10 col-md-2 my-3">
-      <img src="../src/img/check.png" alt=""><h4 class="element-animation_3 fw-bold my-3" id="out">0</h4><p>ПРОЕКТОВ ЗАВЕРШЕНО</p></div>
+      <img src="../src/img/check.png" alt=""><h4 class="element-animation fw-bold my-3" id="out">360</h4><p>ПРОЕКТОВ ЗАВЕРШЕНО</p></div>
        <div class="col-10 col-md-2 my-3">
-      <img src="../src/img/cup.png" alt=""><h4 class="element-animation_4 fw-bold my-3" id="out">0</h4><p>НАГРАД ПОЛУЧЕНО</p></div> </div> 
+      <img src="../src/img/cup.png" alt=""><h4 class="element-animation fw-bold my-3" id="out">23</h4><p>НАГРАД ПОЛУЧЕНО</p></div> </div> 
       
   </div>      
         
@@ -257,29 +259,41 @@
   
   <footer>
   <div class="block7" id="contacts">
-  <div class="row justify-content-center gy-5 pt-5"><div class="p-4 col-12 text-center fs-2 fw-bold text-uppercase text-white">МОИ КОНТАКТЫ</div> 
+  <div class="row justify-content-center gy-5 pt-3"><div class="p-4 col-12 text-center fs-2 fw-bold text-uppercase text-white">МОИ КОНТАКТЫ</div> 
    <div class="row justify-content-center"><div class="col-12 text-center"><img src="../src/img/line.png" alt="Линия..."></div></div>
   <p class="text-center text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe quibusdam odio dolor pariatur recusandae.</p> </div> 
   
  <div class="row justify-content-center">
  
- <div class="col-10 col-md-2 fs-6 text-center"><div class="text-center my-5"><img src="../src/img/geo.png" alt=""></div><h5 class="text-white">Санкт-Петербург</h5><p class="text-white">Невский проспект 11</p></div>
+ <div class="col-10 col-md-2 fs-6 text-center"><div class="text-center my-3"><img src="../src/img/geo.png" alt=""></div><h5 class="text-white">Санкт-Петербург</h5><p class="text-white">Невский проспект 11</p></div>
  
  <div class="col-10 col-md-2 fs-6 text-center"><div class="text-center my-5"><img src="../src/img/envelope.png" alt=""></div><h5 class="text-white">info@companyname.com</h5></div>
  
  <div class="col-10 col-md-2 fs-6 text-center"><div class="text-center my-5"><img src="../src/img/pipe.png" alt=""></div><h5 class="text-white">+7999 999-99-99</h5></div></div>
  
-        <div class="row justify-content-center my-4"><div class="col-12 text-center fs-5 fw-bold text-uppercase text-white">ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</div></div>
-<form>
-<div class="row flex-wrap justify-content-center my-5"><div class="col-5 col-md-3">
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Имя"></div>
-  <div class="col-5 col-md-3"><input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email"></div>
-  </div>
+        <div class="row justify-content-center my-4"><div class="col-12 text-center fs-5 fw-bold text-uppercase text-white">ОСТАВЬТЕ СВОИ КОНТАКТЫ</div></div>
+<form action="php/mail.php" method="POST">
+ <div class="row justify-content-center"><div class="mb-3 col-10 col-md-3">
+  <label for="exampleInputName" class="form-label text-white">Ваше имя</label>
+  <input type="user_name" class="form-control" id="exampleInputName">
+  </div></div> 
   
-<div class="row justify-content-center"><div class="col-10 col-md-6">
-  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Сообщение" rows="3"></textarea></div>
-</div>
- </form>
+  <div class="row justify-content-center">
+  <div class="mb-3 col-10 col-md-3 my-2">
+  <label for="exampleInputEmail1" class="form-label text-white">Email адрес</label>
+  <input type="user_email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div></div>   
+     
+  <div class="row justify-content-center"><div class="mb-3 col-10 col-md-3">
+  <label for="exampleInputPhone" class="form-label text-white">Номер телефона</label>
+  <input type="user_phone" class="form-control" id="exampleInputPhone">
+  </div></div>
+ 
+ <div class="row justify-content-center">
+ <div class="mb-3 col-10 col-md-3 my-2"><label for="exampleFormControlTextarea1" class="form-label text-white">Дополнительная информация</label>
+ <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></div></div>
+ 
+</form>
  <div class="row justify-content-center my-4"><div class="col-12 col-md-1">
   <button type="button" class="btn btn-outline-light fs-5">Отправить</button></div></div>
             
@@ -287,8 +301,8 @@
        
      
   <div class="block8">
-      <div class="col-12 text-center">I'M HERE</div>
-  </div>    
+      <div class="col-12"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A10fb348a49700d93761887e24b0ef3f3117fedda7a5016fc1528f4e7e54dcb26&amp;width=100%25&amp;height=280&amp;lang=ru_RU&amp;scroll=fales"></script>
+  </div></div>    
        
        
          
@@ -299,6 +313,8 @@
    <script src="js/jquery-3.6.0.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/jquery.magnific-popup.min.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script src="js/maskedinput.min.js"></script>
    <script src="js/myScript.js"></script>                                             
    
    </body>

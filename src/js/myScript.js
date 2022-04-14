@@ -1,6 +1,8 @@
 "use strict"
+new WOW().init();  
 
-let question = confirm("Рассчитаем стоимость и сроки?", "Да или нет");
+
+/*let question = confirm("Рассчитаем стоимость и сроки?", "Да или нет");
 if (question === true)
    {alert ("Тогда начнем!!!");
 	
@@ -81,7 +83,7 @@ if (adaptive == "Нет" || "нет") {time += 1;}
 }
 else {
     alert ("Вы нажали отмена");
-	}console.log(question);
+	}console.log(question); */
 
 
 $('.container a').on('click', function() {
@@ -96,54 +98,30 @@ $(document).ready(function() {
   $('.image-link').magnificPopup({type:'image'});
 });
 
-
-$(function () { 
-    var target_block = $(".element-animation"); 
-    var blockStatus = true;  
-    $(window).scroll(function() { 
-        var scrollEvent = ($(window).scrollTop() > ($(target_block).offset().top - $(window).height())); 
-            if(scrollEvent && blockStatus) {  
-            blockStatus = false;  
-			
-$(function() {
-		var numb_start = $(".element-animation_1").text();
-		$({numberValue: numb_start}).animate({numberValue: 120}, {
-		duration: 1000, 
-		easing: "linear",
-		step: function(val) {
-			$(".element-animation_1").html(Math.ceil(val));
-			} }); });		
-$(function() {
-		var numb_start = $(".element-animation_2").text();
-		$({numberValue: numb_start}).animate({numberValue: 4600}, {
-		duration: 1000, 
-		easing: "linear",
-		step: function(val) {
-			$(".element-animation_2").html(Math.ceil(val));
-			} }); });
-$(function() {
-		var numb_start = $(".element-animation_3").text();
-		$({numberValue: numb_start}).animate({numberValue: 340}, {
-		duration: 1000, 
-		easing: "linear",
-		step: function(val) {
-			$(".element-animation_3").html(Math.ceil(val));
-			} }); });
-$(function() {
-		var numb_start = $(".element-animation_4").text();
-		$({numberValue: numb_start}).animate({numberValue: 23}, {
-		duration: 1000, 
-		easing: "linear",
-		step: function(val) {
-			$(".element-animation_4").html(Math.ceil(val));
-			} }); });
-
-		 } }); });
-			 
-					 
-					 
-					 
-					 
-					 
-					 
+let options = {threshold: [1.0]};				
+let observer = new IntersectionObserver(onEntry, options);				
+let elements = $('.element-animation');				
+elements.each((i, el) => {				
+	observer.observe(el);
+});			
 				
+function onEntry(entry){				
+	entry.forEach(change => {			
+		if (change.isIntersecting){	
+	$('.element-animation').each(function () {
+   $(this).prop('Counter', 0).animate({
+    Counter: $(this).text()
+    } , {
+     duration: 1000,
+     easing: 'swing',
+     step: function (now) {
+        $(this).text(Math.ceil(now));
+	     }
+    });
+});
+		change.target.classList.add('show-animation');	
+					}		
+	});			
+}				
+
+$("#exampleInputPhone").mask("+7(999) 999-9999");
