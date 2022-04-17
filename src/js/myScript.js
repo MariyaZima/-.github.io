@@ -122,6 +122,60 @@ function onEntry(entry){
 		change.target.classList.add('show-animation');	
 					}		
 	});			
-}				
+};				
 
 $("#exampleInputPhone").mask("+7(999) 999-9999");
+
+$('form').submit(function(event){
+	event.preventDefault();
+	$.ajax({
+		type:"POST",
+	url:"php/mail.php",
+	data:$(this).serialize()
+	}).done(function(){
+		$(this).find("input").val("");
+		alert("Письмо успешно отправлено!");
+		$("form").trigger("reset");
+		$('.popup').fadeOut();
+	});
+	return false;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
